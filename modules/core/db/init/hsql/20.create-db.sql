@@ -1,0 +1,8 @@
+-- begin PLR_SPEAKER
+create unique index IDX_PLR_SPEAKER_UNIQ_EMAIL on PLR_SPEAKER (EMAIL)^
+create index IDX_PLR_SPEAKER_LASTNAME on PLR_SPEAKER (LAST_NAME)^
+-- end PLR_SPEAKER
+-- begin PLR_SESSION
+alter table PLR_SESSION add constraint FK_PLR_SESSION_ON_SPEAKER foreign key (SPEAKER_ID) references PLR_SPEAKER(ID)^
+create index IDX_PLR_SESSION_ON_SPEAKER on PLR_SESSION (SPEAKER_ID)^
+-- end PLR_SESSION

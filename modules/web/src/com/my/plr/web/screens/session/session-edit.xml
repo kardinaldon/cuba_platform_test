@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
-        caption="msg://sessionEdit.caption"
+        caption="msg://editorCaption"
         focusComponent="form"
         messagesPack="com.my.plr.web.screens.session">
     <data>
